@@ -1,0 +1,203 @@
+/* For most elements css sets position while the width, height
+and in some cases also margin are added with js.
+This is done so the playing board would fit inside the screen
+regardless of the screen dimensions. */
+
+body {
+  margin-top: 2vh;
+  min-width: 320px;
+  background-image: url("https://raw.githubusercontent.com/Beekey/tictactoe/master/images/woodBackground.jpg");
+  /*---------------------------
+  make text selection impossible
+  --------------------------------*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* background image will be added later with js */
+#level_selector {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  top: 0;
+}
+
+#lc {
+  left: 0;
+}
+
+#lm {
+  left: 35.5%;
+}
+
+#lh {
+  right: 0;
+}
+
+.level_underline {
+  margin: auto;
+  z-index: -1;
+}
+
+#board {
+  position: relative;
+  margin: auto;
+  cursor: default;
+}
+
+#board img {
+  margin: auto;
+}
+
+#creator {
+  position: absolute;
+  top: 9.5%;
+  left: 71%;
+}
+
+#xoro {
+  top: 0;
+  left: 0;
+  border-radius: 10%;
+}
+
+#xoro button {
+  display: inline-block;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+#xoro img {
+  margin: auto;
+}
+
+.position {
+  position: absolute;
+}
+
+#p11 {
+  top: 18%;
+  left: 28.5%;
+}
+
+#p12 {
+  top: 18.5%;
+  left: 47.5%;
+}
+
+#p13 {
+  top: 18%;
+  left: 66.5%;
+}
+
+#p21 {
+  top: 34.5%;
+  left: 26%;
+}
+
+#p22 {
+  top: 35%;
+  left: 46%;
+}
+
+#p23 {
+  top: 35%;
+  left: 65.3%;
+}
+
+#p31 {
+  top: 51.5%;
+  left: 24.5%;
+}
+
+#p32 {
+  top: 51.5%;
+  left: 44%;
+}
+
+#p33 {
+  top: 52%;
+  left: 64%;
+}
+
+.score {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  font-size: 73px;
+  color: #2B2262;
+  text-align: center;
+}
+
+#scoreWon {
+  top: 75%;
+  left: 21.5%;
+}
+
+#scoreTied {
+  top: 74.5%;
+  left: 45%;
+}
+
+#scoreLost {
+  top: 74%;
+  left: 67%;
+}
+
+.strikeD,
+.strikeU,
+.strikeV,
+.strikeH {
+  position: absolute;
+  z-index: -1;
+}
+
+#sh1 {
+  top: 24%;
+  left: 27%;
+}
+
+#sh2 {
+  top: 40%;
+  left: 25%;
+}
+
+#sh3 {
+  top: 57%;
+  left: 25%;
+}
+
+#sv1 {
+  top: 16.5%;
+  left: 29%;
+}
+
+#sv2 {
+  top: 16.5%;
+  left: 47.9%;
+}
+
+#sv3 {
+  top: 16.6%;
+  left: 67.7%;
+}
+
+#sD {
+  top: 18%;
+  left: 26.7%;
+}
+
+#sU {
+  top: 21.5%;
+  left: 21.7%;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- Tic Tac Toe
+Coded and designed by Beekey
+https://beekey.github.io/
+for the Front End Web Developer
+course on Free Code Camp -->
+<!-- ------- -->
+<!-- Level selection is hidden and stays that way until the
+player picks a side.
+User can switch between three levels of difficulty.
+When level is selected it is underlined with a red line.
+If switched during game, new level will become active
+at the beginning of a new game. -->
+<div id="level_selector" class="text-center center-block">
+  <div id="lc" class="underline" title="Click to select level: casual">
+    <div class="level_underline"></div>
+  </div>
+  <div id="lm" class="underline" title="Click to select level: medium">
+    <div class="level_underline"></div>
+  </div>
+  <div id="lh" class="underline" title="Click to select level: hard">
+    <div class="level_underline"></div>
+  </div>
+</div>
+<!-- ---------------- -->
+<!-- Pick a side - user selects X or O to represent their moves.
+The choice is offered once and once chosen it stays the same. 
+After the choice is made, the section is no longer visible. -->
+<div id="xoro" class="text-center center-block"><img id="pick_side" class="img-responsive" src="https://raw.githubusercontent.com/Beekey/tictactoe/master/images/pickSide.png" alt="Pick a side!"><button id="pickX"><img class="img-responsive" src="https://raw.githubusercontent.com/Beekey/tictactoe/master/images/playerX.png" alt="X"></button>
+  <button id="pickO"><img class="img-responsive" src="https://raw.githubusercontent.com/Beekey/tictactoe/master/images/playerO.png" alt="O"></button>
+</div>
+<!-- -------------------- -->
+<!-- Central element representing the playing board
+with results and link to creators portfolio.-->
+<div id="board" class="container text-center center-block"><img class="img-responsive" src="https://raw.githubusercontent.com/Beekey/tictactoe/master/images/TTTboard3.png">
+  <div id="creator">
+    <a href="https://beekey.github.io/" title="Designed and coded by Beekey" target="_blank"><img class="img-responsive" src="https://raw.githubusercontent.com/Beekey/tictactoe/master/images/designedBeekey.png" alt="Designed and coded by Beekey"></a>
+  </div>
+  <!-- --------------- -->
+  <!-- invisible boxes covering each of the 9 playing positions.
+As the game progresses X or O is added to the box and
+they are all deleted once the game is over. -->
+  <div id="p11" class="position"></div>
+  <div id="p12" class="position"></div>
+  <div id="p13" class="position"></div>
+  <div id="p21" class="position"></div>
+  <div id="p22" class="position"></div>
+  <div id="p23" class="position"></div>
+  <div id="p31" class="position"></div>
+  <div id="p32" class="position"></div>
+  <div id="p33" class="position"></div>
+  <!-- --------------- -->
+  <!-- Boxes that hold count of wins, losses and ties -->
+  <div id="scoreWon" class="score">0</div>
+  <div id="scoreTied" class="score">0</div>
+  <div id="scoreLost" class="score">0</div>
+  <!-- ---------------- -->
+  <!-- Invisible boxes that are placeholders for red strikethrough lines
+that will briefly appear in case of a win. -->
+  <div id="sh1" class="strikeH"></div>
+  <div id="sh2" class="strikeH"></div>
+  <div id="sh3" class="strikeH"></div>
+  <div id="sv1" class="strikeV"></div>
+  <div id="sv2" class="strikeV"></div>
+  <div id="sv3" class="strikeV"></div>
+  <div id="sD" class="strikeD"></div>
+  <div id="sU" class="strikeU"></div>
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
